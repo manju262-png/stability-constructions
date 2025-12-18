@@ -83,7 +83,7 @@
         /* Floating Buttons */
         .call-float {
             position: fixed;
-            bottom: 150px;
+            bottom: 210px;
             right: 20px;
             background: #28a745;
             color: #fff;
@@ -96,12 +96,12 @@
         }
 
         .call-float.second {
-            bottom: 90px;
+            bottom: 150px;
         }
 
         .whatsapp-float {
             position: fixed;
-            bottom: 20px;
+            bottom: 90px;
             right: 20px;
             background: #25D366;
             color: #fff;
@@ -113,19 +113,18 @@
             z-index: 9999;
         }
 
-        .location-btn {
-            display: inline-block;
-            padding: 14px 24px;
+        .navigate-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
             background: #1f3c88;
             color: #fff;
+            padding: 15px 18px;
+            border-radius: 50%;
+            font-size: 22px;
             text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-
-        .location-btn:hover {
-            background: #14274e;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            z-index: 9999;
         }
     </style>
 </head>
@@ -189,13 +188,13 @@
 
 <section id="location">
     <h2>Our Location</h2>
-    <p>Click below to open our <strong>exact location</strong> in Google Maps:</p>
-
-    <a class="location-btn"
-       href="https://maps.app.goo.gl/DBmMmLuKqXJKh7X96?g_st=aw"
-       target="_blank">
-        📍 Get Directions (Exact Location)
-    </a>
+    <p>
+        <a href="https://maps.app.goo.gl/DBmMmLuKqXJKh7X96?g_st=aw"
+           target="_blank"
+           style="font-weight:bold;color:#1f3c88;">
+           📍 Open Exact Location in Google Maps
+        </a>
+    </p>
 </section>
 
 <section id="contact">
@@ -224,6 +223,9 @@
 <a href="tel:+919019281502" class="call-float">📞</a>
 <a href="tel:+919538084343" class="call-float second">📞</a>
 <a href="https://wa.me/919019281502" target="_blank" class="whatsapp-float">💬</a>
+<a href="https://maps.app.goo.gl/DBmMmLuKqXJKh7X96?g_st=aw"
+   target="_blank"
+   class="navigate-float">📍</a>
 
 </body>
 </html>
